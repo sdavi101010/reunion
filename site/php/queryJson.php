@@ -24,6 +24,7 @@
 			while ($row = mysql_fetch_assoc($queryResult)) {
 				$results[] = $row;
 			}
+			header('Content-type: application/json');
 			print json_encode($results);
 		?>
 	</body>
